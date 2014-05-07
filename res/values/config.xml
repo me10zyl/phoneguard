@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="serverUrl">http://10.97.34.26:1234/mobilephonesafeguard/update.xml</string>
+</resources>
