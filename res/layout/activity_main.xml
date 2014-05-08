@@ -3,24 +3,27 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.phoneguard.MainActivity"
     tools:ignore="MergeRootFrame" >
-    
     <TextView
         android:id="@+id/label_mobilephoneguard"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/label_mobilephoneguard"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:background="#31F0AF"
         android:gravity="center"
-         />
-  	<GridView
-  	    android:id="@+id/gv_main"
-  	    android:layout_width="fill_parent"
-  	    android:layout_height="fill_parent"
-  	    android:verticalSpacing="8dp"
-  	    android:numColumns="2"
-  	    ></GridView>
-</LinearLayout>
+        android:text="@string/label_mobilephoneguard"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
+    <GridView
+        android:id="@+id/gv_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="2"
+        android:layout_marginTop="15dp"
+        android:verticalSpacing="8dp" >
+
+    </GridView>
+
+</LinearLayout>

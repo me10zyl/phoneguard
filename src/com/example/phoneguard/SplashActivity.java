@@ -52,6 +52,7 @@ public class SplashActivity extends ActionBarActivity {
 			if (msg.what == ConnectError) {
 				Toast.makeText(SplashActivity.this, "获取版本信息错误，请稍后再试",
 						Toast.LENGTH_SHORT).show();
+				turnToMainUI();
 			}
 			if(msg.what == SHOW_UPDATE_DIALOG) {
 				showUpdateDialog();
