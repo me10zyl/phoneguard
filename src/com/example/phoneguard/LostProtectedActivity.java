@@ -24,7 +24,7 @@ public class LostProtectedActivity extends Activity implements OnClickListener{
 		if (isSetPassword()) {
 			showLoginDialog();
 		}else {
-			showFirstDialog();
+			showFirstDialog();  
 		}
 	}
 	private void showFirstDialog() {
