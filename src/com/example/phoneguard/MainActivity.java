@@ -2,6 +2,7 @@ package com.example.phoneguard;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
@@ -139,6 +140,9 @@ public class MainActivity extends ActionBarActivity implements
 		// TODO Auto-generated method stub
 		switch (position) {
 		case 0: // 手机防盗
+			Intent intent = new Intent();
+			intent.setClass(this, LostProtectedActivity.class);
+			startActivity(intent);
 			break;
 		case 1: // 通讯卫士
 			break;
