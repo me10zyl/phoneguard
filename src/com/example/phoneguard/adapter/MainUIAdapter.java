@@ -49,7 +49,7 @@ public class MainUIAdapter extends BaseAdapter{
 		return position;
 	}
 
-	@Override
+	@Override//GridViewµÄÓÅ»¯¡£¡£
 	public View getView(int position, View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
 		View view = inflater.inflate(R.layout.main_item, null);
@@ -67,5 +67,5 @@ public class MainUIAdapter extends BaseAdapter{
         }
         return view;
 	}
-
+		
 }
